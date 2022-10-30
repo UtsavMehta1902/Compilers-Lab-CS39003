@@ -8,7 +8,7 @@
 %{
     #include <stdio.h>
     #include <stdlib.h>
-    #include <ass5_20CS10068_20CS10069_translator.h>
+    #include "ass5_20CS10068_20CS10069_translator.h"
     #include "y.tab.h"
 %}
 
@@ -48,21 +48,21 @@ NEWLINE [\n]
 "auto"                          { return AUTO; }
 "break"                         { return BREAK; }
 "case"                          { return CASE; }
-"char"                          { return CHAR; }
+"char"                          { return _CHAR; }
 "const"                         { return CONST; }
 "continue"                      { return CONTINUE; }
 "default"                       { return DEFAULT; }
 "do"                            { return DO; }
-"double"                        { return DOUBLE; }
+"double"                        { return _DOUBLE; }
 "else"                          { return ELSE; }
 "enum"                          { return ENUM; }             
 "extern"                        { return EXTERN; }
-"float"                         { return FLOAT; }
+"float"                         { return _FLOAT; }
 "for"                           { return FOR; }
 "goto"                          { return GOTO; }
 "if"                            { return IF; }
 "inline"                        { return INLINE; }
-"int"                           { return INT; }
+"int"                           { return _INT; }
 "long"                          { return LONG; }
 "register"                      { return REGISTER; }
 "restrict"                      { return RESTRICT; }
@@ -76,7 +76,7 @@ NEWLINE [\n]
 "typedef"                       { return TYPEDEF; }
 "union"                         { return UNION; }
 "unsigned"                      { return UNSIGNED; }
-"void"                          { return VOID; }
+"void"                          { return _VOID; }
 "volatile"                      { return VOLATILE; }
 "while"                         { return WHILE; }
 "_Bool"                         { return BOOL; }
